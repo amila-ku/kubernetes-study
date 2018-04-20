@@ -11,6 +11,8 @@
 - Storage 7%
 - Troubleshooting 10%
 
+[CKA Curriculam](https://github.com/cncf/curriculum/blob/master/certified_kubernetes_administrator_exam_v1.9.0.pdf)
+
 
 # CKAD
 
@@ -21,3 +23,5 @@
  - Pod Design 20% 
  - Services & Networking 13% 
  - State Persistence 8% 
+
+[CKAD Curriculam](https://github.com/cncf/curriculum/blob/master/certified_kubernetes_application_developer_exam_v1.0.pdf)
