@@ -33,6 +33,12 @@ On Datacenter
 - [CFCR](https://docs-cfcr.cfapps.io/)
 
 
+Get Start Guide:
+
+- [Kubernetes Basics](https://kubernetes.io/docs/tutorials/kubernetes-basics/)
+
+
+
 ## Advanced Topics
 
 - [Kubernetes Networking](https://www.youtube.com/watch?v=0Omvgd7Hg1I&t=1847s)
@@ -41,3 +47,8 @@ On Datacenter
 - [Role Based Access Controls](https://www.youtube.com/watch?v=Nw1ymxcLIDI)
 - [Kubernetes Auth and Access Control](https://www.youtube.com/watch?v=WvnXemaYQ50&t=607s)
 - [Kubernetes Ingress](https://www.youtube.com/watch?v=Syw2PzRudIM&t=2s)
+
+
+## more useful video sessions
+
+- [TGI Kubernetes Series by Heptio](https://www.youtube.com/watch?v=9YYeE-bMWv8&list=PLvmPtYZtoXOENHJiAQc6HmV2jmuexKfrJ)
