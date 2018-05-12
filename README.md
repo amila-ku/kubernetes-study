@@ -31,7 +31,9 @@ kubectl run --restart=Never fooweb --image=nginx --port=80 --env="APPTYPE=foo"
 ## Replication Controller
 
 Creating Replication Controller:
-``` kubectl run --generator=run/v1 fooweb --image=nginx
+``` 
+kubectl run --generator=run/v1 fooweb --image=nginx
+
 ```
 
 ## Deployment
