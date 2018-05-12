@@ -10,6 +10,10 @@ Pods are the lowest compute unit of Kubernetes. Pods can contain multiple contai
 
 containers running in same pod share the same ip address.
 
+Replication Set:
+-----------------
+A ReplicaSet ensures that a specified number of pod replicas are running at any given time. But lacks the capability to manage updates(Rolling Update) for which Deployments should be used.
+
 Deployments:
 ------------
 
@@ -17,6 +21,7 @@ To ensure that pods are always running, you define a deployment . A deployment i
 how many.
 
 Deployment can be edited by kubectl edit or kubectl appy using a manifest. Previous version of replicaset is kept when a new replicaset is created for changed on deployment.
+
 
 
 ReplicationController Vs Deployment:
@@ -33,6 +38,11 @@ DaemonSet:
 
 Ensures single pod exists on each cluster node
 
+StatefulSet:
+------------
+
+Manages the deployment and scaling of a set of Pods, and provides guarantees about the ordering and uniqueness of these Pods. Similar to Deployments manages pod state according to the spec but unlike deployments StatefulSets maintain stickey identity for pods.
+
 
 Service : 
 ---------
@@ -45,3 +55,15 @@ ClusterIP: Exposes the service on a cluster-internal IP. Choosing this value mak
 NodePort: Exposes the service on each Node’s IP at a static port (the NodePort). A ClusterIP service, to which the NodePort service will route, is automatically created. You’ll be able to contact the NodePort service, from outside the cluster, by requesting <NodeIP>:<NodePort>.
 LoadBalancer: Exposes the service externally using a cloud provider’s load balancer. NodePort and ClusterIP services, to which the external load balancer will route, are automatically created.
 ExternalName: Maps the service to the contents of the externalName field (e.g. foo.bar.example.com), by returning a CNAME record with its value. No proxying of any kind is set up. This requires version 1.7 or higher of kube-dns
+
+
+Job:
+----
+
+Job is intended to run pods that are intended to run and terminate on their own (batch jobs).
+
+[CronJob](https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/):
+--------
+
+Runs a workload periodically on a given schedule.
+
