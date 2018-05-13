@@ -111,6 +111,11 @@ kubectl set image deployment/fooweb nginx=nginx:1.91
 
 ```
 
+```
+kubectl set resources deployment fooweb -c=nginx --limits=cpu=200m,memory=512Mi
+
+```
+
 Check Status of a Updated  Deployment
 ```
 kubectl rollout status deployment fooweb
@@ -173,3 +178,11 @@ Create Service for ReplicationController with Protocol
 kubectl expose rc streamer --port=4100 --protocol=udp --name=video-stream
 
 ```
+
+Create Service for ReplicaSet
+```
+kubectl expose rs fooweb --port=80 --target-port=80 --name=fooweb-svc
+```
+
+
+[kubectl referance](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands)
