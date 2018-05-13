@@ -117,8 +117,19 @@ kubectl rollout status deployment fooweb
 
 Check Rollout History of a Deployment
 ```
-kubectl rollout status deployment fooweb
+kubectl rollout history deployment/fooweb
 
+```
+
+Check more details about a change
+```
+kubectl rollout history deployment/fooweb --revision=2
+```
+
+Rollback a change
+```
+kubectl rollout undo deployment/fooweb
+kubectl rollout undo deployment/fooweb --to-revision=2
 ```
 
 
