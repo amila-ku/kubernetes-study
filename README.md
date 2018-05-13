@@ -103,6 +103,8 @@ kubectl expose deployment nginx --port=443 --target-port=8443 --name=nginx-https
 
 ```
 
+### Update, Rollback and Check Status
+
 Update a Deployment
 ```
 kubectl set image deployment/fooweb nginx=nginx:1.91
@@ -124,6 +126,7 @@ kubectl rollout history deployment/fooweb
 Check more details about a change
 ```
 kubectl rollout history deployment/fooweb --revision=2
+
 ```
 
 Rollback a change
