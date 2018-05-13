@@ -1,7 +1,7 @@
 # kubernetes-study
 Material for Studying Kubernetes and Preparing for Kubernetes certificatios
 
-[Concepts Overview] (https://kubernetes.io/docs/user-journeys/users/application-developer/foundational/#section-2)
+[Concepts Overview](https://kubernetes.io/docs/user-journeys/users/application-developer/foundational/#section-2)
 
 # Kubectl Examples
 
