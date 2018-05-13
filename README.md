@@ -2,6 +2,8 @@
 Material for Studying Kubernetes and Preparing for Kubernetes certificatios
 
 [Concepts Overview](https://kubernetes.io/docs/user-journeys/users/application-developer/foundational/#section-2)
+[Get Started](https://github.com/amila-ku/kubernetes-study/tree/master/101)
+[Certification Topics](https://github.com/amila-ku/kubernetes-study/tree/master/CKA_CKAD_topics)
 
 # Kubectl Examples
 
@@ -104,6 +106,18 @@ kubectl expose deployment nginx --port=443 --target-port=8443 --name=nginx-https
 Update a Deployment
 ```
 kubectl set image deployment/fooweb nginx=nginx:1.91
+
+```
+
+Check Status of a Updated  Deployment
+```
+kubectl rollout status deployment fooweb
+
+```
+
+Check Rollout History of a Deployment
+```
+kubectl rollout status deployment fooweb
 
 ```
 
