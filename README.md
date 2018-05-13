@@ -1,9 +1,9 @@
 # kubernetes-study
 Material for Studying Kubernetes and Preparing for Kubernetes certificatios
 
-[Concepts Overview](https://kubernetes.io/docs/user-journeys/users/application-developer/foundational/#section-2)
-[Get Started](https://github.com/amila-ku/kubernetes-study/tree/master/101)
-[Certification Topics](https://github.com/amila-ku/kubernetes-study/tree/master/CKA_CKAD_topics)
+- [Concepts Overview](https://kubernetes.io/docs/user-journeys/users/application-developer/foundational/#section-2)
+- [Get Started](https://github.com/amila-ku/kubernetes-study/tree/master/101)
+- [Certification Topics](https://github.com/amila-ku/kubernetes-study/tree/master/CKA_CKAD_topics)
 
 # Kubectl Examples
 
